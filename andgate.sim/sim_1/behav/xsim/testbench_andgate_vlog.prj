@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../andgate.srcs/sources_1/new/and_gate.sv" \
+"../../../../andgate.srcs/sim_1/new/testbench_andgate.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
